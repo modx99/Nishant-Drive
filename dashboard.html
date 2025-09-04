@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Drive - Simple Version</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>Nishant's Drive (Digital Home)</h1>
+                <div id="storageInfo" class="storage-info"></div>
+            </div>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </header>
+        
+        <div class="dashboard-content">
+            <div class="upload-section">
+                <h2>Upload Files</h2>
+                <div class="upload-box" id="uploadBox">
+                    <div class="drop-zone" id="dropZone">
+                        <div class="drop-zone-content">
+                            <div class="drop-icon">📁</div>
+                            <p>Drag and drop files here or click to browse</p>
+                            <input type="file" id="fileInput" multiple style="display: none;">
+                        </div>
+                    </div>
+                    <button id="uploadBtn" class="upload-btn">Upload</button>
+                </div>
+                <div id="uploadStatus" class="upload-status"></div>
+                <div id="uploadProgress" class="upload-progress" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">0%</div>
+                </div>
+            </div>
+            
+            <div class="files-section">
+                <div class="files-header">
+                    <h2>My Files</h2>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search files..." class="search-input">
+                        <button id="clearSearch" class="clear-search-btn" style="display: none;">×</button>
+                    </div>
+                </div>
+                <div id="filesList" class="files-list">
+                    <p class="no-files">No files uploaded yet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
