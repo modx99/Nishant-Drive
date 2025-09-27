@@ -94,3 +94,17 @@ This application stores files locally in your browser. Files are not uploaded to
 - Cloud storage integration
 - Advanced search filters
 - File compression
+
+
+
+
+
+
+
+⭐⭐🌟🌟
+
+things to do in it ⬇️ 
+login page - ( google account + email login in it )
+dashboard - 3 option [upload , prieview , download ] also give the size occupetions
+log out 
+connect to amazon s3 bucket
